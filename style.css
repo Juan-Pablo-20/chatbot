@@ -1,0 +1,226 @@
+body {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    background-color: rgb(41, 41, 41);
+    font-family: Helvetica, sans-serif;
+}
+
+@keyframes fondoColor {
+    0% {
+        background-color: rgb(41, 41, 41);
+    } 100% {
+        background-color: rgb(192, 192, 192);
+    }
+}
+
+@keyframes fondoColor2 {
+    0% {
+        background-color: rgb(192, 192, 192);
+    } 100% {
+        background-color: rgb(41,41,41);
+    }
+}
+
+@keyframes colorCabecera {
+    0% {
+        background-color: rgb(95, 95, 95);
+    } 100% {
+        background-color: #00b35f;
+    }
+}
+
+@keyframes colorCabecera2 {
+    0% {
+        background-color: #00b35f;
+    } 100% {
+        background-color: rgb(95, 95, 95);
+    }
+}
+
+@keyframes colorEntrada {
+    0% {
+        background-color: rgb(56, 56, 56);
+    } 100% {
+        background-color: gray;
+    }
+}
+
+@keyframes colorEntrada2 {
+    0% {
+        background-color: gray;
+    } 100% {
+        background-color: rgb(56, 56, 56);
+    }
+}
+
+@keyframes colorInput {
+    0% {
+        background-color: rgb(95, 95, 95);
+    } 100% {
+        background-color: white;
+    }
+}
+
+@keyframes colorInput2 {
+    0% {
+        background-color: white;
+    } 100% {
+        background-color: rgb(95, 95, 95);;
+    }
+}
+
+.contColor {
+    width: 55px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 5%;
+    background-color: rgb(150, 150, 150);
+    cursor: pointer;
+}
+
+.bolitaColor {
+    width: 25px;
+    height: 25px;
+    border-radius: 1000px;
+    background-color: white;    
+}
+
+.contenedor {
+    width: 700px;
+    margin: auto;
+    position: relative;
+    box-shadow: 0px 0px 100px black;
+}
+
+.chat1, .chat2 {
+    width: auto;
+    height: auto;
+    max-width: 50%;
+    margin-top: 7%;
+    z-index: 100;
+    padding: 2%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    color: white;
+    word-wrap: break-word; /*para que el texto no haga desbordamiento*/
+}
+
+.chat1 {
+    background-color:#00b35f;
+    background-color:#01645a;
+    float: right;
+    clear: both;
+    border-top-left-radius: 10px;
+}
+
+.chat2 {
+    background-color: rgb(71, 71, 71);
+    float: left;
+    clear: both;
+    border-top-right-radius: 10px;
+}
+
+.cabecera {
+    width: inherit;
+    height: 60px;
+    background-color: rgb(95, 95, 95);
+    text-align: center;
+    display: flex;
+    align-items: center;
+    top: 0;
+    z-index: 1000;
+    position: fixed;
+    color: white;
+}
+
+.cabecera h1 {
+    margin: auto;
+    font-size: larger;
+}
+
+.contenido {
+    width: auto;
+    height: 100%;
+    overflow: hidden;
+    overflow-y: scroll;
+    padding: 2%;
+    padding-top: 60px;
+    background-image: url(img/fondo.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.entrada {
+    width: inherit;
+    height: 70px;
+    background-color: rgb(56, 56, 56);  
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    text-align: center;
+}
+
+.divM {
+    width: 85%;
+    margin-left: 2%;
+}
+
+.divE {
+    width: 50px;
+    height: 50px;
+    text-align: right;
+}
+
+.mensaje {
+    width: 90%;
+    height: 35px;
+    outline: none;
+    font-size: larger;
+    background-color: rgb(95, 95, 95);
+    border-radius: 30px;
+    border: none;
+    padding: 1%;
+    padding-left: 2%;
+    color: white;
+    margin-left: 2%;
+}
+
+.ajustar {
+    width: 100%;
+}
+
+.video {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.enviar {
+    background-image: url(img/enviar.png);
+    background-color: rgb(95, 95, 95);
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;    
+    height: 100%;
+    border-radius: 100px;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    margin-right: 2%; 
+    opacity: 0.5;
+}
+
+@media screen and (max-width:700px){
+    .contenedor {
+        width: 100%;
+    }
+}
+@media screen and (max-width:450px){
+    .divM {
+    margin-left: 0;
+    }
+    .mensaje {
+        margin: 0;
+    }
+}
